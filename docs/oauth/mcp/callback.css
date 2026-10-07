@@ -1,0 +1,34 @@
+.callback {
+  --action-width: 10rem;
+  --action-height: 2.75rem;
+  --action-gap: 1.5rem;
+  --action-padding: 0.75rem;
+  --action-size: 0.9375rem;
+  --action-radius: 999px;
+}
+
+:lang(en) .callback .status {
+  letter-spacing: normal;
+  text-indent: 0;
+}
+
+.callback-action {
+  display: grid;
+  place-items: center;
+  width: min(100%, var(--action-width));
+  min-height: var(--action-height);
+  margin-top: var(--action-gap);
+  padding: var(--action-padding);
+  border-radius: var(--action-radius);
+  background: var(--ink);
+  color: var(--surface);
+  font-size: var(--action-size);
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.callback-action:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 4px;
+}
