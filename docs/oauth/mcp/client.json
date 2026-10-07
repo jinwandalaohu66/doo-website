@@ -1,0 +1,17 @@
+{
+  "client_id": "https://heydoo.si/oauth/mcp/client.json",
+  "client_name": "Doo",
+  "client_uri": "https://heydoo.si/",
+  "logo_uri": "https://heydoo.si/logo.svg",
+  "redirect_uris": [
+    "https://heydoo.si/oauth/mcp/"
+  ],
+  "grant_types": [
+    "authorization_code",
+    "refresh_token"
+  ],
+  "response_types": [
+    "code"
+  ],
+  "token_endpoint_auth_method": "none"
+}
