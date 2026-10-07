@@ -1,0 +1,81 @@
+:root {
+  color-scheme: light dark;
+  --surface: #ffffff;
+  --ink: #000000;
+  --muted: #707070;
+  --logo-size: 7.5rem;
+  --wordmark-width: 8rem;
+  --brand-gap: 1.25rem;
+  --status-gap: 1.75rem;
+  --status-size: 1rem;
+  --page-space: clamp(1.5rem, 6vw, 4rem);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #000000;
+    --ink: #ffffff;
+    --muted: #a0a0a0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--surface);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: var(--page-space);
+  padding-top: max(var(--page-space), env(safe-area-inset-top));
+  padding-right: max(var(--page-space), env(safe-area-inset-right));
+  padding-bottom: max(var(--page-space), env(safe-area-inset-bottom));
+  padding-left: max(var(--page-space), env(safe-area-inset-left));
+}
+
+.holding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  text-align: center;
+}
+
+.mascot {
+  display: block;
+  width: var(--logo-size);
+  max-width: 100%;
+  height: auto;
+}
+
+.wordmark {
+  width: var(--wordmark-width);
+  max-width: 100%;
+  margin: var(--brand-gap) 0 0;
+  line-height: 0;
+}
+
+.wordmark img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.status {
+  margin: var(--status-gap) 0 0;
+  color: var(--muted);
+  font-size: var(--status-size);
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0.16em;
+  text-indent: 0.16em;
+}
