@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="color-scheme" content="light dark">
-    <meta name="description" content="Doo，正在筹备。">
-    <meta property="og:title" content="Doo · 正在筹备">
-    <meta property="og:description" content="Doo，正在筹备。">
+    <meta name="description" content="Doo 是一款 iOS AI 助手，帮助你整理资料、准备邮件草稿和安排日程。目前处于测试阶段。">
+    <meta property="og:title" content="Doo · 你的 AI 助手">
+    <meta property="og:description" content="整理资料、准备邮件草稿和安排日程。Google 连接器目前仅向指定测试用户开放。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://heydoo.si/">
-    <title>Doo · 正在筹备</title>
+    <title>Doo · 你的 AI 助手</title>
     <link rel="canonical" href="https://heydoo.si/">
     <link rel="icon" href="logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="site.css">
@@ -20,7 +20,32 @@
       <h1 id="site-name" class="wordmark">
         <img src="wordmark.svg" alt="Doo" width="216" height="84">
       </h1>
-      <p class="status">正在筹备</p>
+      <p class="status">你的 AI 助手 · 测试中</p>
+      <p class="intro">用自然语言整理资料、制作内容、准备邮件草稿和安排日程。Doo 是一款 iOS 应用，你可以分别连接自己使用的服务，让助手围绕你的要求工作。</p>
+      <section class="description" aria-labelledby="connectors-title">
+        <h2 id="connectors-title">按需连接，由你授权</h2>
+        <ul>
+          <li><strong>Gmail</strong>：搜索邮件、阅读会话和附件，准备保存在 Gmail 中供你审阅的草稿。当前没有发送邮件功能。</li>
+          <li><strong>Google Calendar</strong>：查看日历和空闲时间，按你的要求创建、修改或删除日程。</li>
+          <li><strong>Google Drive</strong>：查找与阅读已有文件、导出文档，创建文本文件、文件夹和允许复制的文件。</li>
+        </ul>
+        <p>每个连接器分别跳转 Google 授权。相关内容会经 Doo 的云服务处理，并在需要 AI 帮助时交给 OpenAI；保存的回复、文件和任务恢复记录可能包含这些内容。使用前请阅读<a href="legal/privacy.html#google">Google 数据说明</a>。你可以解除连接、在 Google 撤销授权，或申请删除 Doo 数据。</p>
+        <p class="muted">Google 连接器目前仅向指定测试用户开放，尚未通过 Google 公众访问审核。本站没有公开下载入口。</p>
+        <p><a href="help/google-connectors.html">连接器功能与数据管理</a></p>
+      </section>
+      <section class="description" lang="en" aria-labelledby="english-title">
+        <h2 id="english-title">Doo, your AI assistant</h2>
+        <p>Doo is an iOS AI assistant in testing. It helps you organize information, create content, prepare Gmail drafts, manage Google Calendar events, and find or create supported Google Drive files. Each Google service requires separate OAuth authorization. Doo currently has no email sending tool.</p>
+        <p>Relevant data is processed by Doo's cloud services and, when AI assistance is needed, OpenAI. Saved replies, files and task recovery records may contain that data. Google connectors are currently limited to registered testers and have not been approved for public Google access. Read the <a href="legal/privacy.html#google-en">Google data disclosure</a> and <a href="help/google-connectors.html#english">connector and deletion guide</a>.</p>
+      </section>
+      <footer class="site-footer">
+        <nav aria-label="网站信息">
+          <a href="legal/privacy.html">隐私政策 / Privacy</a>
+          <a href="legal/terms.html">服务条款 / Terms</a>
+          <a href="mailto:jinwandalaohu940@gmail.com">联系 / Contact</a>
+        </nav>
+        <p>© 2026 Doo · 张文禄 / WENLU ZHANG</p>
+      </footer>
     </main>
   </body>
 </html>
